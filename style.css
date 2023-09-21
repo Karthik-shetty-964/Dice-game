@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #18193e;
+    text-align: center;
+    color: #25c7c7;
+}
+
+#title {
+    font-size: 8em;
+    margin: 40px;
+    font-family: 'Lobster Two', cursive;
+}
+
+#players {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 60px 30px;
+}
+
+.dice p {
+    font-family: 'Lobster Two', cursive;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 30px;
+}
+
+.img1, .img2 {
+    width: 15vw;
+}
+.rotate {
+    transform:rotate(360deg);
+    transition: transform 0.5s ease;
+}
+button {
+    margin: 10px;
+    padding : 10px;
+    background-color: #25c7c7;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+@media (max-width : 600px) {
+    #players {
+        flex-direction: column;
+    }
+    #title {
+        font-size: 5em;
+    }
+    .img1, .img2 {
+        width: 30vw;
+    }
+}
